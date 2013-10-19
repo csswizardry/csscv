@@ -124,6 +124,7 @@ a {
 .selector {
     color: #0083ce;
     text-transform: lowercase; /* [1] */
+    white-space: pre;
 
     &:before {
         content: "."; /* [2] */
@@ -134,6 +135,18 @@ a {
     }
 
 }
+
+    .selector__delimiter {
+        position: relative;
+
+        &:before {
+            content: "-";
+            position: absolute;
+            display: inline-block;
+            width: .625em;
+            text-align: center;
+        }
+    }
 
 
 
