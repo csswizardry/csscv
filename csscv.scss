@@ -269,6 +269,34 @@ a {
 
 
 /*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+/**
+ * Lists of values should be marked up with a `ul` with a class of `.value-list`.
+ */
+.value-list {
+    list-style: none;
+    display: inline;
+
+    > li {
+        display: inline;
+
+        &:after {
+            content: ", ";
+        }
+
+        &:last-child:after {
+            content: "";
+        }
+
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
     #BEM
 \*------------------------------------*/
 /**
