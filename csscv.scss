@@ -47,6 +47,32 @@ $tab-size:  4;
 
 
 /*------------------------------------*\
+    #HELPERS
+\*------------------------------------*/
+/**
+ * Little helper classes to allow us to quickly build stuff.
+ *
+ * 1. Space apart our rulesets by the same value as our line-height.
+ */
+.spaced {
+    margin-bottom: 24px; /* [1] */
+    margin-bottom: 1.5rem; /* [1] */
+}
+
+.spaced--large {
+    margin-bottom: 5 * 24px;
+    margin-bottom: 5 * 1.5rem;
+}
+
+.indent {
+    padding-left: ($tab-size * .625) +em;
+}
+
+
+
+
+
+/*------------------------------------*\
     #BASE
 \*------------------------------------*/
 /**
@@ -98,15 +124,12 @@ $tab-size:  4;
  * Each block of declarations is marked up as a definition list with a class of
  * `.ruleset`.
  *
- * 1. Space apart our rulesets by the same value as our line-height.
- * 2. Close our rulesets with a curly brace.
+ * 1. Close our rulesets with a curly brace.
  */
 .ruleset {
-    margin-bottom: 24px; /* [1] */
-    margin-bottom: 1.5rem; /* [1] */
 
     &:after {
-        content: "}"; /* [2] */
+        content: "}"; /* [1] */
     }
 
 }
