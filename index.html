@@ -19,43 +19,59 @@
         <span class="comment-block__line">A little bit about myself</span>
     </h2>
 
-    <h3 class="selector">Me</h3>
+    <div class="ruleset">
 
-    <dl class="ruleset  spaced">
-        <dt class="property">Name</dt>
-        <dd class="value"><span class="string">Harry Roberts</span></dd>
-        <dt class="property">Job</dt>
-        <dd class="value"><span class="string">Front-end Architect</span></dd>
-        <dt class="property">Location</dt>
-        <dd class="value"><span class="string">Leeds, UK</span></dd>
-    </dl>
+        <h3 class="selector">Me</h3>
 
-    <h3 class="selector"><span class="element" data-namespace="me">Contact</span></h3>
+        <dl class="declarations  spaced">
+            <dt class="property">Name</dt>
+            <dd class="value"><span class="string">Harry Roberts</span></dd>
+            <dt class="property">Job</dt>
+            <dd class="value"><span class="string">Front-end Architect</span></dd>
+            <dt class="property">Location</dt>
+            <dd class="value"><span class="string">Leeds, UK</span></dd>
+        </dl>
 
-    <dl class="ruleset  spaced--large">
-        <dt class="property">Email</dt>
-        <dd class="value"><span class="url">harry@csswizardry.com</span></dd>
-        <dt class="property">Website</dt>
-        <dd class="value"><span class="url">csswizardry.com</span></dd>
-    </dl>
+    </div>
+
+    <div class="ruleset  indent">
+
+        <h3 class="selector"><span class="element" data-namespace="me">Contact</span></h3>
+
+        <dl class="declarations  spaced--large">
+            <dt class="property">Email</dt>
+            <dd class="value"><span class="url">harry@csswizardry.com</span></dd>
+            <dt class="property">Website</dt>
+            <dd class="value"><span class="url">csswizardry.com</span></dd>
+        </dl>
+
+    </div>
 
     <h2 class="comment-block">
         <span class="comment-block__line">Career and work.</span>
     </h2>
 
-    <h3 class="selector">Job</h3>
+    <div class="ruleset">
 
-    <dl class="ruleset">
-        <dt class="property">Title</dt>
-        <dd class="value">Developer</dd>
-    </dl>
+        <h3 class="selector">Job</h3>
 
-    <h2 class="selector"><span class="modifier" data-namespace="job">BSkyB</span></h2>
+        <dl class="declarations">
+            <dt class="property">Title</dt>
+            <dd class="value">Developer</dd>
+        </dl>
 
-    <dl class="ruleset">
-        <dt class="property">Title</dt>
-        <dd class="value">Developer</dd>
-    </dl>
+    </div>
+
+    <div class="ruleset">
+
+        <h2 class="selector"><span class="modifier" data-namespace="job">BSkyB</span></h2>
+
+        <dl class="declarations">
+            <dt class="property">Title</dt>
+            <dd class="value">Developer</dd>
+        </dl>
+
+    </div>
 
 </body>
 </html>

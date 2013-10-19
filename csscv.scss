@@ -54,7 +54,8 @@ $tab-size:  4;
  *
  * 1. Space apart our rulesets by the same value as our line-height.
  */
-.spaced {
+.spaced,
+%spaced {
     margin-bottom: 24px; /* [1] */
     margin-bottom: 1.5rem; /* [1] */
 }
@@ -90,6 +91,20 @@ $tab-size:  4;
 
 
 /*------------------------------------*\
+    #RULESETS
+\*------------------------------------*/
+/**
+ * Wrap our selector and declarations in an element with a class of `.ruleset`.
+ */
+.ruleset {
+    @extend %spaced;
+}
+
+
+
+
+
+/*------------------------------------*\
     #SELECTORS
 \*------------------------------------*/
 /**
@@ -118,15 +133,15 @@ $tab-size:  4;
 
 
 /*------------------------------------*\
-    #RULESETS
+    #DECLARATIONS
 \*------------------------------------*/
 /**
  * Each block of declarations is marked up as a definition list with a class of
- * `.ruleset`.
+ * `.declarations`.
  *
- * 1. Close our rulesets with a curly brace.
+ * 1. Close our declarations with a curly brace.
  */
-.ruleset {
+.declarations {
 
     &:after {
         content: "}"; /* [1] */
