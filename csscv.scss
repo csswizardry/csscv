@@ -1,0 +1,207 @@
+/*------------------------------------*\
+    #CSSCV
+\*------------------------------------*/
+/**
+ * CSSCV is a simple, opinionated stylesheet for formatting semantic HTML to
+ * look like a CSS file. Apply the class of `.csscv` to the `html` element of
+ * your page to invoke the CSSCV stylesheet. Removing this class will leave you
+ * with an unstyled page of pure, semantic HTML. This is useful if you wish to
+ * disable CSSCV in order to style your page more suitably for recruiters and
+ * more serious applications.
+ */
+.csscv {
+
+
+
+
+
+/*------------------------------------*\
+    #SETTINGS
+\*------------------------------------*/
+$tab-size:  4;
+
+
+
+
+
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+/**
+ * This is a pretty poor reset, but it will suffice for a single-page, single-
+ * responsibility stylesheet.
+ *
+ * 1. Everything the same size (16px by default).
+ * 2. Fixes an odd font-sizing issue in some browsers.
+ */
+* {
+    margin:  0;
+    padding: 0;
+    font-size: 100%; /* [1] */
+    font-family: monospace, monospace; /* [2] */
+    font-weight: normal;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BASE
+\*------------------------------------*/
+/**
+ * 1. Comfortable line-height (equivalent to 24px).
+ * 2. Pad the page by the same value as our line-height.
+ */
+& {
+    line-height: 1.5; /* [1] */
+    padding: 24px; /* [2] */
+    padding: 1.5rem; /* [2] */
+}
+
+
+
+
+
+/*------------------------------------*\
+    #SELECTORS
+\*------------------------------------*/
+/**
+ * Each section is marked up as a heading which becomes our selector. We assume
+ * all our selectors will be classes.
+ *
+ * 1. Lowercase our class names.
+ * 2. Prepend a period.
+ * 3. Append an opening brace.
+ */
+.selector {
+    text-transform: lowercase; /* [1] */
+
+    &:before {
+        content: "."; /* [2] */
+    }
+
+    &:after {
+        content: " {"; /* [3] */
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #RULESETS
+\*------------------------------------*/
+/**
+ * Each block of declarations is marked up as a definition list with a class of
+ * `.ruleset`.
+ *
+ * 1. Space apart our rulesets by the same value as our line-height.
+ * 2. Close our rulesets with a curly brace.
+ */
+.ruleset {
+    margin-bottom: 24px; /* [1] */
+    margin-bottom: 1.5rem; /* [1] */
+
+    &:after {
+        content: "}"; /* [2] */
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #PROPERTIES
+\*------------------------------------*/
+/**
+ * A `dt` and `dd` form a property–value pair (i.e. declaration). Each `dt` gets
+ * a class of `.property`.
+ *
+ * 1. Indent our declarations based on the chosen tab size.
+ * 2. End each property with a colon and a space.
+ */
+.property {
+    text-transform: lowercase;
+    float: left;
+    clear: both;
+    padding-left: ($tab-size * .625) +em;
+
+    &:after {
+        content: ":\00A0";
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #VALUES
+\*------------------------------------*/
+/**
+ * Each `dd` gets a class of `.value`.
+ *
+ * 1. End each value with a semi-colon.
+ */
+.value {
+
+    &:after {
+        content: ";";
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #STRINGS
+\*------------------------------------*/
+/**
+ * Strings in CSS (such as font names) need to be enclosed in quotes. Wrap
+ * strings in your CV with a `span` with a class of `.string`, e.g.
+ * `<span class="string">Harry Roberts</span>`.
+ */
+.string {
+
+    &:before,
+    &:after {
+        content: "\"";
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #URLS
+\*------------------------------------*/
+/**
+ * Wrap any URLs with a `span` with a class of `.url`.
+ */
+.url {
+
+    &:before{
+        content: "url(";
+    }
+
+    &:after {
+        content: ")";
+    }
+
+}
+
+
+
+
+
+} //csscv
