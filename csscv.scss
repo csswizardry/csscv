@@ -227,4 +227,49 @@ $tab-size:  4;
 
 
 
+/*------------------------------------*\
+    #COMMENTS
+\*------------------------------------*/
+.comment {
+
+    &:before {
+        content: "/* ";
+    }
+
+    &:after {
+        content: " */";
+    }
+
+}
+
+.comment-block {
+
+    &:before,
+    &:after {
+        display: block;
+    }
+
+    &:before {
+        content: "/**";
+    }
+
+    &:after {
+        content: "\00A0*/";
+    }
+
+}
+
+    .comment-block__line {
+        display: block;
+
+        &:before {
+            content: "\00A0*\00A0";
+        }
+
+    }
+
+
+
+
+
 } //csscv
