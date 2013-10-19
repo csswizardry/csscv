@@ -204,4 +204,27 @@ $tab-size:  4;
 
 
 
+/*------------------------------------*\
+    #BEM
+\*------------------------------------*/
+/**
+ * Denote any relationships within your CV with BEM-style naming.
+ *
+ * 1. An element of an item is prepended with the namespace you set (via
+ *    `data-namespace` in your markup) and two underscores.
+ * 2. A modifier of an item is prepended with the namespace you set (via
+ *    `data-namespace` in your markup) and two hyphens.
+ */
+.element:before {
+    content: attr(data-namespace) "__"; /* [1] */
+}
+
+.modifier:before {
+    content: attr(data-namespace) "--"; /* [2] */
+}
+
+
+
+
+
 } //csscv
