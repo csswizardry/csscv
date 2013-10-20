@@ -9,11 +9,11 @@ CSSCV matches my own personal style of writing CSS, and uses a specific colour
 scheme, [<cite>Solarized</cite>](http://ethanschoonover.com/solarized). Some of
 its other more opinionated features:
 
-* Only single classes are allowed as selectors
-* It uses a BEM-style naming convention
-* Rulesets are spaced by five carriage returns
-* Quasi-nested rulesets are indented
-* All indents are four spaces
+* [Only single classes are allowed as selectors](http://csswizardry.com/2012/05/keep-your-css-selectors-short/)
+* [It uses a BEM-style naming convention](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+* [Rulesets are spaced by five carriage returns](https://github.com/csswizardry/CSS-Guidelines#section-titles)
+* [Quasi-nested rulesets are indented](https://github.com/csswizardry/CSS-Guidelines#anatomy-of-rulesets)
+* [All indents are four spaces](https://github.com/csswizardry/CSS-Guidelines#anatomy-of-rulesets)
 
 ## Enabling
 
@@ -173,7 +173,7 @@ order to prepend the class with the correct block name, e.g.:
 ### `.comment`, `.comment-block` and `.comment-block__line`
 
 These classes, unsurprisingly, style markup to look like comments. The `.comment`
-class gives and inline comment, whilst `.comment-block` gives us a DocBlock
+class gives an inline comment, whilst `.comment-block` gives us a DocBlock
 style comment:
 
     <p class="comment-block">
