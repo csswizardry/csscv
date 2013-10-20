@@ -82,3 +82,102 @@ Let’s take a look at what this does:
 As we can see, the rulesets are formed of semantic HTML elements and heavy use
 of CSS pseudo-elements are used to apply CSS-like syntax (braces, (semi-)colons,
 quotes, etc.
+
+## What the classes do
+
+### `.csscv`
+
+This class gets applied to the `html` element and enables CSSCV
+
+### `.spaced`
+
+This class forces all elements which carry it to have one carriage return’s
+space between itself and the following element.
+
+#### `.spaced--large`
+
+This increases the spacing from one to five carriage returns.
+
+### `.indented`
+
+Anything carrying this class will be indented by your chosen tab size amount
+(defined in `$tab-size`).
+
+### `.ruleset`
+
+This class is applied to an element which wraps each whole ruleset. It spaces
+rulesets apart from each other, and can also carry the `.spaced--large` or
+`.indented` classes.
+
+### `.selector`
+
+This class is applied to headings which introduce each ruleset. It adds a period
+before, and an opening brace after, the title of the ruleset.
+
+### `.selector__delimiter`
+
+This class is applied to an empty span in order to hyphen-delimit multi-word
+selectors. For example:
+
+    <h2 class="selector">About<span class="selector__delimiter"> </span>me</h2>
+
+### `.declarations`
+
+This class is applied to the definition list that will form the body of the
+ruleset. It adds a closing brace after the final declaration.
+
+### `.property`
+
+This class is applied to each `dt` element which is a declaration’s property. It
+indents the declaration as per your chosen tab size and adds a trailing colon
+and space.
+
+### `.value`
+
+This is applied to each `dd` element which becomes a declaration’s value. It
+adds a trailing semi-colon.
+
+### `.string`
+
+CSS often has values which contain spaces which need quoting, wrap these strings
+in a `span` that carries the `.string` class.
+
+### `.number`
+
+This class simply colours any number-like values (e.g. `34px`, `#f00`).
+
+### `.url`
+
+Any URL-like values can have the `.url` class applied to them to prepend `url(`
+and append `)` to it.
+
+### `.value-list`
+
+CSS often contains comma-delimited lists of values. In CSSCV we mark these up
+as `ul`s and `li`s. The `ul` take the `.value-list` class.
+
+### `.element` and `.modifier`
+
+These two classes allow you to use
+[BEM-style naming](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+without polluting your markup. To signify an element or modifier, use the
+corresponding class. You need to also use the `data-namespace` attribute in
+order to prepend the class with the correct block name, e.g.:
+
+    <h3 class="selector">Job</h3>
+
+    ...
+
+    <h4 class="selector"><span class="modifier" data-namespace="job">Company</span></h4>
+
+### `.comment`, `.comment-block` and `.comment-block__line`
+
+These classes, unsurprisingly, style markup to look like comments. The `.comment`
+class gives and inline comment, whilst `.comment-block` gives us a DocBlock
+style comment:
+
+    <p class="comment-block">
+        <span class="comment-block__line">Foo</span>
+        <span class="comment-block__line">Bar</span>
+        <span class="comment-block__line">Baz</span>
+    </p>
