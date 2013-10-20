@@ -18,7 +18,36 @@
 /*------------------------------------*\
     #SETTINGS
 \*------------------------------------*/
+/**
+ * How big would you like your tabs to be?
+ */
 $tab-size:  4;
+
+
+/**
+ * Colour settings.
+ */
+$color--blue--dark:     #002935;
+$color--blue--light:    #0083ce;
+$color--grey--dark:     #7f9597;
+$color--grey--light:    #4f6c73;
+$color--mustard:        #b58a0a;
+$color--turquoise:      #00a19b;
+
+
+/**
+ * Reassign colour variables to better names.
+ */
+$color--background:     $color--blue--dark;
+$color--text:           $color--grey--light;
+$color--comment:        $color--grey--dark;
+$color--selector:       $color--blue--light;
+$color--braces:         $color--blue--light;
+$color--property:       $color--mustard;
+$color--value:          $color--mustard;
+$color--colons:         $color--grey--dark;
+$color--string:         $color--turquoise;
+$color--number:         $color--turquoise;
 
 
 
@@ -84,8 +113,9 @@ $tab-size:  4;
     line-height: 1.5; /* [1] */
     padding: 24px; /* [2] */
     padding: 1.5rem; /* [2] */
-    color: #7f9597;
-    background-color: #002935;
+    padding-bottom: 0;
+    color: $color--text;
+    background-color: $color--background;
 }
 
 a {
@@ -122,7 +152,7 @@ a {
  * 3. Append an opening brace.
  */
 .selector {
-    color: #0083ce;
+    color: $color--selector;
     text-transform: lowercase; /* [1] */
     white-space: pre;
 
@@ -165,7 +195,7 @@ a {
 
     &:after {
         content: "}"; /* [1] */
-        color: #0083ce;
+        color: $color--braces;
     }
 
 }
@@ -189,11 +219,11 @@ a {
     float: left;
     clear: both;
     padding-left: ($tab-size * .625) +em;
-    color: #b58a0a;
+    color: $color--property;
 
     &:after {
         content: ":\00A0";
-        color: #7f9597;
+        color: $color--colons;
     }
 
 }
@@ -211,11 +241,11 @@ a {
  * 1. End each value with a semi-colon.
  */
 .value {
-    color: #b58a0a;
+    color: $color--value;
 
     &:after {
         content: ";";
-        color: #7f9597;
+        color: $color--colons;
     }
 
 }
@@ -233,7 +263,7 @@ a {
  * `<span class="string">Harry Roberts</span>`.
  */
 .string {
-    color: #00a19b;
+    color: $color--string;
 
     &:before,
     &:after {
@@ -337,7 +367,7 @@ a {
     #COMMENTS
 \*------------------------------------*/
 .comment {
-    color: #4f6c73;
+    color: $color--comment;
 
     &:before {
         content: "/* ";
@@ -350,7 +380,7 @@ a {
 }
 
 .comment-block {
-    color: #4f6c73;
+    color: $color--comment;
 
     &:before,
     &:after {
