@@ -3,6 +3,14 @@
 **CSSCV is a simple, opinionated stylesheet for formatting semantic HTML to look
 like a CSS file.**
 
+## Getting started
+
+The simplest way to get started with CSSCV is to dive right into the HTML and
+get editing! There is nothing in the Sass that isn’t used in the HTML, so the
+`index.html` file acts as a comprehensive, real-world demo of what CSSCV can do.
+
+Below is a more detailed overview of the ins-and-outs of the way CSSCV works.
+
 ## Opinionated?
 
 CSSCV matches my own personal style of writing CSS, and uses a specific colour
