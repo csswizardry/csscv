@@ -16,6 +16,31 @@
 
 
 /*------------------------------------*\
+    #CONTENTS
+\*------------------------------------*/
+/**
+ * SETTINGS
+ * RESET
+ * HELPERS
+ * BASE
+ * RULESETS
+ * SELECTORS
+ * DECLARATIONS
+ * PROPERTIES
+ * VALUES
+ * STRINGS
+ * NUMBERS
+ * URLS
+ * LISTS
+ * BEM
+ * COMMENTS
+ */
+
+
+
+
+
+/*------------------------------------*\
     #SETTINGS
 \*------------------------------------*/
 /**
@@ -148,13 +173,12 @@ a {
  * all our selectors will be classes.
  *
  * 1. Lowercase our class names.
- * 2. Prepend a period.
- * 3. Append an opening brace.
+ * 3. Prepend a period.
+ * 4. Append an opening brace.
  */
 .selector {
     color: $color--selector;
     text-transform: lowercase; /* [1] */
-    white-space: pre;
 
     &:before {
         content: "."; /* [2] */
@@ -166,8 +190,14 @@ a {
 
 }
 
+    /**
+     * Insert a hyphen in place of a space in multiple word selectors.
+     *
+     * 1. Force the empty element to take up its space.
+     */
     .selector__delimiter {
         position: relative;
+        white-space: pre; /* [1] */
 
         &:before {
             content: "-";
@@ -176,6 +206,7 @@ a {
             width: .625em;
             text-align: center;
         }
+
     }
 
 
@@ -367,6 +398,9 @@ a {
 /*------------------------------------*\
     #COMMENTS
 \*------------------------------------*/
+/**
+ * Create inline comments.
+ */
 .comment {
     color: $color--comment;
 
@@ -380,6 +414,10 @@ a {
 
 }
 
+
+/**
+ * Create multi-line, DocBlock style comments.
+ */
 .comment-block {
     color: $color--comment;
 
