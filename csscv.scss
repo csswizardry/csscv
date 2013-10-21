@@ -458,8 +458,15 @@ a {
 /*------------------------------------*\
     #NOTICE
 \*------------------------------------*/
+/**
+ * The attribution notice that appears at the bottom of a CSSCV page.
+ *
+ * 1. Only display the message if CSSCV is enabled; the notice carries an inline
+ *    style of `display: none;` which will take effect once CSSCV is disabled.
+ */
 .notice {
     @extend %spaced;
+    display: block !important; /* [1] */
 }
 
 
