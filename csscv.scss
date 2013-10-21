@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    #CSSCV
+    CSSCV
 \*------------------------------------*/
 /*!*
  * 
@@ -255,11 +255,11 @@ a {
     text-transform: lowercase;
     float: left;
     clear: both;
-    padding-left: ($tab-size * .625) +em;
+    padding-left: ($tab-size * .625) +em; /* [1] */
     color: $color--property;
 
     &:after {
-        content: ":\00A0";
+        content: ":\00A0"; /* [2] */
         color: $color--colons;
     }
 
@@ -281,7 +281,7 @@ a {
     color: $color--value;
 
     &:after {
-        content: ";";
+        content: ";"; /* [1] */
         color: $color--colons;
     }
 
@@ -458,8 +458,15 @@ a {
 /*------------------------------------*\
     #NOTICE
 \*------------------------------------*/
+/**
+ * The attribution notice that appears at the bottom of a CSSCV page.
+ *
+ * 1. Only display the message if CSSCV is enabled; the notice carries an inline
+ *    style of `display: none;` which will take effect once CSSCV is disabled.
+ */
 .notice {
     @extend %spaced;
+    display: block !important; /* [1] */
 }
 
 
