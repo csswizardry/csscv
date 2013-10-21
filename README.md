@@ -89,7 +89,7 @@ Let’s take a look at what this does:
 
 As we can see, the rulesets are formed of semantic HTML elements and heavy use
 of CSS pseudo-elements are used to apply CSS-like syntax (braces, (semi-)colons,
-quotes, etc.
+quotes, etc).
 
 ## What the classes do
 
@@ -189,3 +189,8 @@ style comment:
         <span class="comment-block__line">Bar</span>
         <span class="comment-block__line">Baz</span>
     </p>
+
+### `.notice`
+
+This is the attribution message that appears at the bottom of the CSSCV page.
+Including the message is not mandatory, but is appreciated.
