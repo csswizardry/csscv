@@ -12,43 +12,77 @@
 <body>
 
     <h1 class="comment-block  spaced--large">
-        <span class="comment-block__line">The Curriculum Vitae of Harry Roberts </span>
+        <span class="comment-block__line">The Curriculum Vitae of Harry Roberts.</span>
+        <span class="comment-block__line"></span>
+        <span class="comment-block__line">Hi there, I’m Harry. I am a Consultant Front-end Architect, designer,</span>
+        <span class="comment-block__line">developer, writer and speaker from the UK.</span>
     </h1>
 
     <h2 class="comment-block">
-        <span class="comment-block__line">A little bit about myself</span>
+        <span class="comment-block__line">About me</span>
     </h2>
 
     <div class="ruleset">
 
         <h3 class="selector">Me</h3>
 
-        <dl class="declarations  spaced">
+        <dl class="declarations">
+
             <dt class="property">Name</dt>
             <dd class="value"><span class="string">Harry Roberts</span></dd>
+
             <dt class="property">Job</dt>
-            <dd class="value"><span class="string">Front-end Architect</span></dd>
+            <dd class="value"><span class="string">Consultant Front-end Architect</span></dd>
+
+            <dt class="property">Status</dt>
+            <dd class="value"><span class="string"><a href="http://csswizardry.com/work/">For hire</a></span></dd>
+
             <dt class="property">Location</dt>
             <dd class="value"><span class="string">Leeds, UK</span></dd>
+
+            <dt class="property">Skills</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li><span class="string">Front-end Architecture</span></li>
+                    <li>Design</li>
+                    <li>Development</li>
+                    <li>OOCSS</li>
+                    <li>Performance</li>
+                    <li><span class="string">Responsive Web Design</span></li>
+                    <li>Speaking</li>
+                    <li>Writing</li>
+                    <li>Git</li>
+                    <li>Vim</li>
+                    <li>Agile</li></ul></dd>
+
         </dl>
 
     </div>
 
-    <div class="ruleset  indented">
+    <div class="ruleset  indented  spaced--large">
 
         <h3 class="selector"><span class="element" data-namespace="me">Contact</span></h3>
 
-        <dl class="declarations  spaced--large">
+        <dl class="declarations">
+
             <dt class="property">Email</dt>
-            <dd class="value"><span class="url">harry@csswizardry.com</span></dd>
+            <dd class="value"><a href="mailto:harry@csswizardry.com">harry@csswizardry.com</a></dd>
+
             <dt class="property">Website</dt>
-            <dd class="value"><span class="url">csswizardry.com</span></dd>
+            <dd class="value"><span class="url"><a href="http://csswizardry.com">csswizardry.com</a></span></dd>
+
+            <dt class="property">GitHub</dt>
+            <dd class="value"><span class="url"><a href="https://github.com/csswizardry/">github.com/csswizardry</a></span></dd>
+
+            <dt class="property">Twitter</dt>
+            <dd class="value"><a href="https://twitter.com/csswizardry">@csswizardry</a></dd>
+
         </dl>
 
     </div>
 
     <h2 class="comment-block">
-        <span class="comment-block__line">Career and work.</span>
+        <span class="comment-block__line">Career and work</span>
     </h2>
 
     <div class="ruleset">
@@ -56,22 +90,247 @@
         <h3 class="selector">Job</h3>
 
         <dl class="declarations">
+
             <dt class="property">Title</dt>
-            <dd class="value">Developer</dd>
+            <dd class="value"><span class="string">Front-end Architect</span></dd>
+
+            <dt class="property">Location</dt>
+            <dd class="value">Worldwide</dd>
+
+            <dt class="property">Services</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li>Consultancy</li>
+                    <li>Training</li>
+                    <li>Speaking</li>
+                    <li>Workshops</li>
+                    <li>Development</li>
+                    <li>Advisory</li></ul></dd>
+
         </dl>
 
     </div>
 
     <div class="ruleset">
 
-        <h2 class="selector"><span class="modifier" data-namespace="job">BSkyB</span></h2>
+        <h4 class="selector"><span class="modifier" data-namespace="job">CSS<span class="selector__delimiter"> </span>Wizardry</span></h4>
 
         <dl class="declarations">
+
+            <dt class="property">Company</dt>
+            <dd class="value"><span class="string">CSS Wizardry Ltd.</span></dd>
+
             <dt class="property">Title</dt>
-            <dd class="value">Developer</dd>
+            <dd class="value"><span class="string">Consultant Front-end Architect</span></dd>
+
+            <dt class="property">From</dt>
+            <dd class="value"><span class="string">October, 2013</span></dd>
+
+            <dt class="property">To</dt>
+            <dd class="value"><span class="string">Present</span></dd>
+
+            <dt class="property">Responsibilities</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li>Consultancy</li>
+                    <li>Speaking</li>
+                    <li>Workshops</li>
+                    <li>Development</li></ul></dd>
+
+            <dt class="property">Notes</dt>
+            <dd class="value"><span class="string">After years of continued open-source
+                contributions, publication of articles, speaking, workshops, and
+                working in varied organisations, I decided, in 2013, to turn CSS
+                Wizardry into my full time job. I am working to help agencies,
+                product teams and individuals write better quality front-end
+                code for faster, leaner and more scalable products. I am doing
+                this through a combination of workshops, talks and consultancy.</span></dd>
+
         </dl>
 
     </div>
+
+    <div class="ruleset">
+
+        <h4 class="selector"><span class="modifier" data-namespace="job">BSkyB</span></h4>
+
+        <dl class="declarations">
+
+            <dt class="property">Company</dt>
+            <dd class="value"><span class="string">British Sky Broadcasting</span></dd>
+
+            <dt class="property">Title</dt>
+            <dd class="value"><span class="string">Senior UI Developer</span></dd>
+
+            <dt class="property">From</dt>
+            <dd class="value"><span class="string">March, 2011</span></dd>
+
+            <dt class="property">To</dt>
+            <dd class="value"><span class="string">October, 2013</span></dd>
+
+            <dt class="property">Responsibilities</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li>Build</li>
+                    <li><span class="string">Front-end Architecture</span></li>
+                    <li><span class="string">Front-end Performance</span></li>
+                    <li>Scalability</li>
+                    <li><span class="string">Mobile Development</span></li>
+                    <li>Training</li>
+                    <li><span class="string">Developer Relations</span></li>
+                    <li><span class="string">Progressive Enhancement</span></li>
+                    <li><span class="string">Design Rationalisation</span></li></ul></dd>
+
+            <dt class="property">Notes</dt>
+            <dd class="value"><span class="string">Working solo in a large team
+            of software engineers, I was responsible for the front-ends of some
+            of Sky’s largest and most profitable online products. I worked to
+            provide in-house tools and frameworks, as well as code standards,
+            to enable the larger team to construct front-ends. I also focused
+            heavily front-end performance, scalability, architecture and
+            maintainability.</span></dd>
+
+        </dl>
+
+    </div>
+
+    <div class="ruleset">
+
+        <h4 class="selector"><span class="modifier" data-namespace="job">Venturelab</span></h4>
+
+        <dl class="declarations">
+
+            <dt class="property">Company</dt>
+            <dd class="value"><span class="string">Venturelab UK Ltd.</span></dd>
+
+            <dt class="property">Title</dt>
+            <dd class="value"><span class="string">Web Developer</span></dd>
+
+            <dt class="property">From</dt>
+            <dd class="value"><span class="string">January, 2010</span></dd>
+
+            <dt class="property">To</dt>
+            <dd class="value"><span class="string">March, 2011</span></dd>
+
+            <dt class="property">Responsibilities</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li>Design</li>
+                    <li>Build</li>
+                    <li>UX</li>
+                    <li>UI</li>
+                    <li>IA</li>
+                    <li>Accessibility</li>
+                    <li><span class="string">Progressive Enhancement</span></li></ul></dd>
+
+            <dt class="property">Notes</dt>
+            <dd class="value"><span class="string">Working as lead front-end
+                developer in a VC’s dedicated web team. I was responsible for
+                the build of websites as well as taking the company toward a
+                progressive enhancement, design-in-the-browser and lean
+                development approach.</span>
+            </dd>
+
+        </dl>
+
+    </div>
+
+    <div class="ruleset  spaced--large">
+
+        <h4 class="selector"><span class="modifier" data-namespace="job">Sense<span class="selector__delimiter"> </span>Internet</span></h4>
+
+        <dl class="declarations">
+
+            <dt class="property">Company</dt>
+            <dd class="value"><span class="string">Sense Internet</span></dd>
+
+            <dt class="property">Title</dt>
+            <dd class="value"><span class="string">Web Developer</span></dd>
+
+            <dt class="property">From</dt>
+            <dd class="value"><span class="string">July, 2008</span></dd>
+
+            <dt class="property">To</dt>
+            <dd class="value"><span class="string">January, 2010</span></dd>
+
+            <dt class="property">Responsibilities</dt>
+            <dd class="value">
+                <ul class="value-list">
+                    <li>Design</li>
+                    <li>Build</li>
+                    <li>UX</li>
+                    <li>UI</li>
+                    <li>IA</li>
+                    <li>Accessibility</li>
+                    <li><span class="string">Designing in the browser</span></li>
+                    <li><span class="string">Progressive Enhancement</span></li></ul></dd>
+
+            <dt class="property">Notes</dt>
+            <dd class="value">
+                <span class="string">I secured my first full-time role at Sense
+                    Internet when I was 17. It was working here that taught me
+                    vital team-working skills as well as providing me with
+                    real-world industry/agency experience.
+                </span>
+            </dd>
+
+        </dl>
+
+    </div>
+
+    <h2 class="comment-block">
+        <span class="comment-block__line">CSS Wizardry</span>
+    </h2>
+
+    <div class="ruleset  spaced--large">
+
+        <h2 class="selector">CSS<span class="selector__delimiter"> </span>Wizardry</h2>
+
+        <dl class="declarations">
+
+            <dt class="property">Website</dt>
+            <dd class="value"><span class="url"><a href="http://csswizardry.com">csswizardry.com</a></span></dd>
+
+            <dt class="property">Date-of-birth</dt>
+            <dd class="value"><span class="number">2007</span></dd>
+
+            <dt class="property">Notes</dt>
+            <dd class="value">
+                <span class="string">Through CSS Wizardry I have written hundreds
+                of articles, released open-source code, spoken at international
+                conferences, run workshops and a lot more. It has become a
+                strong personal brand and is known in the industry as a source
+                of high-quality writing around the subjects of CSS architecture,
+                performance and more.</span></dd>
+
+        </dl>
+
+    </div>
+
+    <h2 class="comment-block">
+        <span class="comment-block__line">Education</span>
+        <span class="comment-block__line"></span>
+        <span class="comment-block__line">Related article: <a href="http://csswizardry.com/2010/11/design-and-education/">Design and education</a></span>
+    </h2>
+
+    <div class="ruleset  spaced--large">
+
+        <h2 class="selector">Qualifications</h2>
+
+        <dl class="declarations">
+
+            <dt class="property">A-Levels</dt>
+            <dd class="value"><span class="number">3</span></dd>
+
+            <dt class="property">GCSEs</dt>
+            <dd class="value"><span class="number">13</span></dd>
+
+        </dl>
+
+    </div>
+
+    <p class="comment  notice">This CV is built using <a href="https://github.com/csswizardry/csscv">CSSCV</a>,
+    a project by <a href="https://twitter.com/csswizardry">Harry Roberts</a>.</p>
 
 </body>
 </html>
